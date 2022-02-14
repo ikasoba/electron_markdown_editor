@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link href="./styles.css" rel="stylesheet">
+    <style>
+      html,body {
+        margin:0;
+        height:100vh;
+        width:100vw;
+      }
+      * {
+        box-sizing:border-box;
+      }
+      body > div {
+        height:100%;
+        display:flex;
+        flex-flow:column;
+      }
+      h1,h2,h3,h4,h5,h6 {
+        margin:0;
+      }
+      #editor {
+        display:flex;
+        height:calc(100% - 3em);
+        width:100%;
+      }
+      #editor > div {
+        height:100%;
+        width:100%;
+        overflow:auto;
+        padding:0.5rem;
+      }
+      #title {
+        border-bottom:solid 1px black;
+      }
+      #content {
+        border-right:solid 1px black;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div style="display:flex">
+        <h1 style="width:100%;display: flex;align-items: center;" contenteditable="true" id="title">タイトル</h1>
+        <button id="preview_mode_btn" style="aspect-ratio:1/1;width:4rem">ソース<br>表示</button>
+      </div>
+      <div id="editor">
+        <div id="content" contenteditable="true">
+
+        </div>
+        <div id="preview">
+        
+        </div>
+      </div>
+    </div>
+    <script src="./renderer.js"></script>
+  </body>
+</html>

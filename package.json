@@ -1,0 +1,16 @@
+{
+  "name": "big-meat-decay-qrag6",
+  "productName": "big-meat-decay-qrag6",
+  "description": "My Electron application description",
+  "keywords": [],
+  "main": "./main.js",
+  "version": "1.0.0",
+  "author": "user",
+  "scripts": {
+    "start": "electron ."
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "electron": "16.0.6"
+  }
+}
